@@ -1,0 +1,139 @@
+$colors: (
+  "black": #000000,
+  "gray": #A6A6A6,
+  "light-white": #FBFBFB,
+  "white": #ffffff,
+  "accent": #BAFBA3
+);
+
+//Spacing
+$spacing-desktop: (
+  "xxxl": 200px,
+  "xxl": 120px,
+  "xl": 100px,
+  "l": 80px,
+  "m": 60px,
+  "s": 40px,
+  "xs": 24px,
+  "xxs": 20px,
+);
+$spacing-mobile: (
+  "xxxl": 120px,
+  "xxl": 100px,
+  "xl": 80px,
+  "l": 60px,
+  "m": 40px,
+  "s": 32px,
+  "xs": 24px,
+  "xxs": 12px,
+);
+$spacing-short: (
+  "xxxl": 16px,
+  "xxl": 14px,
+  "xl": 12px,
+  "l": 10px,
+  "m": 8px,
+  "s": 6px,
+  "xs": 4px,
+  "xxs": 2px,
+);
+
+// Breakpoints
+$breakpoints: (
+  "phone-small": 320px,
+  "tablet": 768px,
+  "tablet-wide": 1024px,
+  "desktop": 1440px,
+  "desktop-wide": 1920px,
+);
+$fonts-sizes-desktop: (
+  "bigNumber": 350px,
+  "bigNumber-line": 462px,
+
+  "h1": 80px,
+  "h1-line": 106px,
+  "h2": 24px,
+  "h2-line": 25px,
+  "h3": 24px,
+  "h3-line": 32px,
+
+  "paragraph": 20px,
+  "paragraph-line": 26px,
+
+  "button_text": 16px,
+  "button_text-line" : 19px,
+  "input_text" : 16px,
+  "input_text-line" : 16px,
+
+  "bubble" : 16px,
+  "bubble-line" : 19px,
+);
+$fonts-sizes-mobile: (
+  "bigNumber": 200px,
+  "bigNumber-line": 264px,
+
+  "h1": 48px,
+  "h1-line": 42px,
+  "h2": 16px,
+  "h2-line": 21px,
+  "h3": 20px,
+  "h3-line": 22px,
+
+  "button_text": 16px,
+  "button_text-line" : 19px,
+
+  "paragraph": 20px,
+  "paragraph-line": 26px,
+  "input_text" : 16px,
+  "input_text-line" : 16px,
+
+  "bubble" : 16px,
+  "bubble-line" : 19px,
+);
+
+
+
+
+
+$layout-desktop: (
+  "margin": 40px,
+  "column-spacing": 20px,
+  "column-number": 12,
+);
+$layout-mobile: (
+  "margin": 16px,
+  "column-spacing": 12px,
+  "column-number": 8,
+);
+$section-desktop: (
+  "padding": 200px,
+  // See Design Decisions in Figma
+);
+$section-mobile: (
+  "padding": 80px,
+  // See Design Decisions in Figma
+);
+$paragraph-desktop: (
+  // See Design Decisions in Figma
+  "h-margin": 28px,
+  "p-margin": 16px,
+  "button-margin": 40px
+);
+$paragraph-desktop: (
+  // See Design Decisions in Figma
+  "h-margin": 28px,
+  "p-margin": 16px,
+  "button-margin": 40px
+);
+// Z-Indexes
+$z-indexes: ("content", "menu", "header", "modal", "loader");
+
+$header-height-dekstop: (
+  "normal": 120px,
+  // "onScroll": ??,
+);
+
+$header-height-mobile: (
+  "normal": 50px,
+  // "onScroll": ??,
+);

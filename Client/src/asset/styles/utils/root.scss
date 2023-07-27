@@ -1,0 +1,129 @@
+@import "./fonts.scss";
+@import "./variables.scss";
+@import "./mixins.scss";
+@import "./reset.scss";
+
+.font-size-test {
+  text-align: center;
+}
+
+body,
+html{
+  // width: fit-content;
+  min-height: 100%;
+  background-color: map-get($colors, 'background');
+  color: map-get($colors, 'fonts');
+  overflow: hidden;
+  width: 100vw;
+  max-width: 100vw;
+}
+html{
+  scroll-behavior: initial;
+}
+header{
+  font-family: "Switzer-Bold";
+}
+body {
+  h1{
+    font-family: "Switzer-Bold";
+    font-size: map-get($fonts-sizes-desktop, "h1");
+    line-height: map-get($fonts-sizes-desktop, "h1-line");
+    @include interpolate(
+      font-size,
+      map-get($breakpoints, "tablet"),
+      map-get($breakpoints, "desktop"),
+      map-get($fonts-sizes-mobile, "h1"),
+      map-get($fonts-sizes-desktop, "h1")
+    );
+    @include interpolate(
+      line-height,
+      map-get($breakpoints, "tablet"),
+      map-get($breakpoints, "desktop"),
+      map-get($fonts-sizes-mobile, "h1-line"),
+      map-get($fonts-sizes-desktop, "h1-line")
+    );
+    @include mq("tablet", max) {
+      font-size: map-get($fonts-sizes-mobile, "h1");
+      line-height: map-get($fonts-sizes-mobile, "h1-line");
+    }
+  }
+
+  h2 {
+    font-family: "Switzer-Bold";
+    font-size: map-get($fonts-sizes-desktop, "h2");
+    line-height: map-get($fonts-sizes-desktop, "h2-line");
+    @include interpolate(
+      font-size,
+      map-get($breakpoints, "tablet"),
+      map-get($breakpoints, "desktop"),
+      map-get($fonts-sizes-mobile, "h2"),
+      map-get($fonts-sizes-desktop, "h2")
+    );
+    @include interpolate(
+      line-height,
+      map-get($breakpoints, "tablet"),
+      map-get($breakpoints, "desktop"),
+      map-get($fonts-sizes-mobile, "h2-line"),
+      map-get($fonts-sizes-desktop, "h2-line")
+    );
+    @include mq("tablet", max) {
+      font-size: map-get($fonts-sizes-mobile, "h2");
+      line-height: map-get($fonts-sizes-mobile, "h2-line");
+    }
+    margin-bottom: 24px;
+  }
+
+  h3 {
+    font-family: "Switzer-Bold";
+    font-size: map-get($fonts-sizes-desktop, "h3");
+    line-height: map-get($fonts-sizes-desktop, "h3-line");
+    @include interpolate(
+      font-size,
+      map-get($breakpoints, "tablet"),
+      map-get($breakpoints, "desktop"),
+      map-get($fonts-sizes-mobile, "h3"),
+      map-get($fonts-sizes-desktop, "h3")
+    );
+    @include interpolate(
+      line-height,
+      map-get($breakpoints, "tablet"),
+      map-get($breakpoints, "desktop"),
+      map-get($fonts-sizes-mobile, "h3-line"),
+      map-get($fonts-sizes-desktop, "h3-line")
+    );
+    @include mq("tablet", max) {
+      font-size: map-get($fonts-sizes-mobile, "h3");
+      line-height: map-get($fonts-sizes-mobile, "h3-line");
+    }
+    margin-bottom: 14px;
+  }
+
+  p {
+    font-family: "Switzer-Regular";
+    font-size: map-get($fonts-sizes-desktop, "paragraph");
+    line-height: map-get($fonts-sizes-desktop, "paragraph-line");
+    @include interpolate(
+      font-size,
+      map-get($breakpoints, "tablet"),
+      map-get($breakpoints, "desktop"),
+      map-get($fonts-sizes-mobile, "paragraph"),
+      map-get($fonts-sizes-desktop, "paragraph")
+    );
+    @include interpolate(
+      line-height,
+      map-get($breakpoints, "tablet"),
+      map-get($breakpoints, "desktop"),
+      map-get($fonts-sizes-mobile, "paragraph-line"),
+      map-get($fonts-sizes-desktop, "paragraph-line")
+    );
+    @include mq("tablet", max) {
+      font-size: map-get($fonts-sizes-mobile, "paragraph");
+      line-height: map-get($fonts-sizes-mobile, "paragraph-line");
+    }
+  }
+
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+}
