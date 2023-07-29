@@ -3,28 +3,21 @@ once the repository cloned, you can run the following instructions:
 
 ## client app
 
-´´´
-
-cd client
-npm install
-npm run start 
-
-´´´
+    cd client
+    npm install
+    npm run start 
 
 
 ## client app
 
-    ´´´bash
 
-cd server
-npm install
+    cd server
+    npm install
 
-#if you use nodemon
+    #if you use nodemon
 
-nodemon index.js
+    nodemon index.js
 
-#else 
+    #else 
 
-node index.js 
-
-    ´´´
+    node index.js 
