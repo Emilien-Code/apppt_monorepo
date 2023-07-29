@@ -14,10 +14,17 @@ npm run start
 
 ## client app
 
-´´´
+    ´´´bash
 
 cd server
 npm install
+
+#if you use nodemon
+
 nodemon index.js
 
-´´´
+#else 
+
+node index.js 
+
+    ´´´
