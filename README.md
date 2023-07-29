@@ -8,7 +8,7 @@ once the repository cloned, you can run the following instructions:
     npm run start 
 
 
-## client app
+## server app
 
 
     cd server
@@ -17,4 +17,4 @@ once the repository cloned, you can run the following instructions:
     #if you use nodemon
     nodemon index.js
     #else 
-    node index.js 
+    node index.js  
