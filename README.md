@@ -15,9 +15,6 @@ once the repository cloned, you can run the following instructions:
     npm install
 
     #if you use nodemon
-
     nodemon index.js
-
     #else 
-
     node index.js 
